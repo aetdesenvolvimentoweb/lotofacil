@@ -1,0 +1,30 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Concursos {
+  id       String @id @default(auto()) @map("_id") @db.ObjectId
+  concurso Int    @unique @map("Concurso")
+  bola1    Int    @map("Bola1")
+  bola2    Int    @map("Bola2")
+  bola3    Int    @map("Bola3")
+  bola4    Int    @map("Bola4")
+  bola5    Int    @map("Bola5")
+  bola6    Int    @map("Bola6")
+  bola7    Int    @map("Bola7")
+  bola8    Int    @map("Bola8")
+  bola9    Int    @map("Bola9")
+  bola10   Int    @map("Bola10")
+  bola11   Int    @map("Bola11")
+  bola12   Int    @map("Bola12")
+  bola13   Int    @map("Bola13")
+  bola14   Int    @map("Bola14")
+  bola15   Int    @map("Bola15")
+
+  @@map("concursos")
+}

@@ -20,7 +20,7 @@ export function AdBanner({
   useEffect(() => {
     if (typeof window !== "undefined" && adContainerRef.current) {
       try {
-        // @ts-ignore
+        // @ts-expect-error - AdSense is not typed
         (window.adsbygoogle = window.adsbygoogle || []).push({});
       } catch (error) {
         console.error("AdSense error:", error);

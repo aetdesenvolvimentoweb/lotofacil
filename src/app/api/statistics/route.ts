@@ -260,6 +260,7 @@ export async function GET() {
 
     return NextResponse.json(results);
   } catch (error) {
+    console.error("Erro ao criar concurso:", error);
     return NextResponse.json(
       { error: "Falha ao buscar estatísticas" },
       { status: 500 }

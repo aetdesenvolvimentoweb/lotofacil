@@ -12,22 +12,22 @@ import { AdHorizontal, AdRectangle } from "@/components/ads";
 
 interface Concurso {
   id: string;
-  concurso: string;
-  bola1: string;
-  bola2: string;
-  bola3: string;
-  bola4: string;
-  bola5: string;
-  bola6: string;
-  bola7: string;
-  bola8: string;
-  bola9: string;
-  bola10: string;
-  bola11: string;
-  bola12: string;
-  bola13: string;
-  bola14: string;
-  bola15: string;
+  concurso: number;
+  bola1: number;
+  bola2: number;
+  bola3: number;
+  bola4: number;
+  bola5: number;
+  bola6: number;
+  bola7: number;
+  bola8: number;
+  bola9: number;
+  bola10: number;
+  bola11: number;
+  bola12: number;
+  bola13: number;
+  bola14: number;
+  bola15: number;
 }
 
 interface ConcursosResponse {

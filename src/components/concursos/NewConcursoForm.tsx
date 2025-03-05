@@ -25,22 +25,102 @@ import {
 import { toast } from "sonner";
 
 const formSchema = z.object({
-  concurso: z.string().min(1, "Número do concurso obrigatório"),
-  bola1: z.string().min(1, "Bola obrigatória"),
-  bola2: z.string().min(1, "Bola obrigatória"),
-  bola3: z.string().min(1, "Bola obrigatória"),
-  bola4: z.string().min(1, "Bola obrigatória"),
-  bola5: z.string().min(1, "Bola obrigatória"),
-  bola6: z.string().min(1, "Bola obrigatória"),
-  bola7: z.string().min(1, "Bola obrigatória"),
-  bola8: z.string().min(1, "Bola obrigatória"),
-  bola9: z.string().min(1, "Bola obrigatória"),
-  bola10: z.string().min(1, "Bola obrigatória"),
-  bola11: z.string().min(1, "Bola obrigatória"),
-  bola12: z.string().min(1, "Bola obrigatória"),
-  bola13: z.string().min(1, "Bola obrigatória"),
-  bola14: z.string().min(1, "Bola obrigatória"),
-  bola15: z.string().min(1, "Bola obrigatória"),
+  concurso: z
+    .string()
+    .min(1, "Número do concurso obrigatório")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola1: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola2: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola3: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola4: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola5: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola6: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola7: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola8: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola9: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola10: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola11: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola12: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola13: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola14: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
+  bola15: z
+    .string()
+    .min(1, "Bola obrigatória")
+    .refine((val) => !isNaN(Number(val)), {
+      message: "Deve ser um número válido",
+    }),
 });
 
 type FormData = z.infer<typeof formSchema>;

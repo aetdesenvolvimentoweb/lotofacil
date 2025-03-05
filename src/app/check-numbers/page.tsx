@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import CheckNumbersJsonLd from "./JsonLdScript";
-import { AdHorizontal, AdRectangle } from "@/components/ads";
+import { AdHorizontal } from "@/components/ads";
 
 interface ResultData {
   total: number;

@@ -81,8 +81,9 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json(results);
   } catch (error) {
+    console.error("Erro ao criar concurso:", error);
     return NextResponse.json(
-      { error: "Falha ao verificar os números" },
+      { error: "Falha ao verificar os números." },
       { status: 500 }
     );
   }

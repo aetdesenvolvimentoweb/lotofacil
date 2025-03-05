@@ -4,7 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import StatisticsJsonLd from "./JsonLdScript";
-import { AdHorizontal, AdRectangle } from "@/components/ads";
+import { AdHorizontal } from "@/components/ads";
 
 interface NumberStat {
   number: number;

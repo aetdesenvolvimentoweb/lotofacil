@@ -3,9 +3,9 @@ import { AdBanner } from "./AdBanner";
 export function AdHorizontal() {
   return (
     <AdBanner
-      adSlot="1234567890" // Substitua pelo seu slot de anúncio real
-      format="horizontal"
-      className="my-6"
+      adSlot="1112889238" // Substitua pelo seu slot de anúncio real
+      format="auto"
+      className="my-3"
     />
   );
 }

@@ -36,7 +36,7 @@ export function AdBanner({
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
-        data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+        data-ad-client="pub-7842359297542307"
         data-ad-slot={adSlot}
         data-ad-format={format}
         data-full-width-responsive={responsive ? "true" : "false"}

@@ -94,7 +94,7 @@ export default function StatisticsPage() {
         <div className="bg-white p-6 rounded-lg border shadow-sm">
           <h2 className="text-lg font-semibold mb-4">Números Mais Sorteados</h2>
           <div className="space-y-3">
-            {data?.mostDrawn.map((item, index) => (
+            {data?.mostDrawn.map((item) => (
               <div key={item.number} className="flex items-center">
                 <div className="w-8 h-8 rounded-full bg-green-600 text-white flex items-center justify-center text-sm font-medium mr-3">
                   {item.number}

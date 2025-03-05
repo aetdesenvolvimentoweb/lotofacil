@@ -1,5 +1,4 @@
 import { db } from "@/lib/db";
-import { concursoToNumberArray } from "@/lib/utils";
 import { NextResponse } from "next/server";
 
 interface Concurso {

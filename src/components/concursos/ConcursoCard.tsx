@@ -2,7 +2,7 @@ import { concursoToNumberArray } from "@/lib/utils";
 
 interface ConcursoCardProps {
   concurso: {
-    id?: string;
+    id: string;
     concurso: number;
     bola1: number;
     bola2: number;

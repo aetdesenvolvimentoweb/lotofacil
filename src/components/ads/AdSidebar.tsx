@@ -3,10 +3,10 @@ import { AdBanner } from "./AdBanner";
 export function AdSidebar() {
   return (
     <AdBanner
-      adSlot="0987654321" // Substitua pelo seu slot de anúncio real
-      format="vertical"
-      responsive={false}
-      className="h-full"
+      adSlot="8348381422" // Substitua pelo seu slot de anúncio real
+      format="auto"
+      responsive={true}
+      className="my-auto"
     />
   );
 }

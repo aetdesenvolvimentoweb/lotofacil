@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { Providers } from "@/components/providers/Providers";
@@ -69,6 +70,7 @@ export default function RootLayout({
           <main className="flex-1 container py-8 mx-auto px-4">{children}</main>
           <Footer />
           <Toaster position="top-center" />
+          <Analytics />
         </Providers>
       </body>
     </html>
